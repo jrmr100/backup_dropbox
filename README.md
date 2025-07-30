@@ -35,7 +35,7 @@ Realizar respaldo de Mikrowisp1 y 2, Proxmox y cualquier archivo a DROPBOX
       nombre: backup_IFX
       Carpetas: Mikrowisp1, Mikrowisp2, Proxmox 
 
-- Instala los requerimientos del sistema
+- Instalar los requerimientos del sistema
 
       .venv/bin/pip3 install -r requirements.txt
 
@@ -47,11 +47,11 @@ Realizar respaldo de Mikrowisp1 y 2, Proxmox y cualquier archivo a DROPBOX
 - Crear un crontab para Ejecutar el script
       
         De forma local: 
-        .venv/bin/python3 backup_mw.py
+        .venv/bin/python3 backup_dropbox.py
         
         Desde crontab:
         sudo crontab -e
-        0 4 * * * cd /home/jmonroy/python/backup_mw && .venv/bin/python3 backup_mw.py 
+        0 4 * * * cd /home/jmonroy/python/backup_dropbox && .venv/bin/python3 backup_dropbox.py 
 
 - TROUBLESHOOTING
 
